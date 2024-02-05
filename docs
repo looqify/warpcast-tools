@@ -1,0 +1,87 @@
+fetch("https://client.warpcast.com/v2/user-by-username?username=jacopo.eth", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "en-US,en;q=0.9",
+    "authorization": "Bearer MK-4NSiK24iDOAVEhp9P+JPy69JRiGuJK8SO+t72apQ6YhKXzpuxLtrK7nCwBpRULFwkSfomcOLHV8AJ+VAhfjEVw==",
+    "content-type": "application/json; charset=utf-8",
+    "fc-amplitude-device-id": "SQSDxvr9j7hgkoEjZ8OCbV",
+    "fc-amplitude-session-id": "1707051624536",
+    "sec-ch-ua": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"macOS\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site",
+    "Referer": "https://warpcast.com/",
+    "Referrer-Policy": "strict-origin-when-cross-origin"
+  },
+  "body": null,
+  "method": "GET"
+});
+
+
+
+fetch("https://client.warpcast.com/v2/followers?fid=267375&limit=15", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "en-US,en;q=0.9",
+    "authorization": "Bearer MK-4NSiK24iDOAVEhp9P+JPy69JRiGuJK8SO+t72apQ6YhKXzpuxLtrK7nCwBpRULFwkSfomcOLHV8AJ+VAhfjEVw==",
+    "content-type": "application/json; charset=utf-8",
+    "fc-amplitude-device-id": "SQSDxvr9j7hgkoEjZ8OCbV",
+    "fc-amplitude-session-id": "1707051624536",
+    "sec-ch-ua": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"macOS\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site",
+    "Referer": "https://warpcast.com/",
+    "Referrer-Policy": "strict-origin-when-cross-origin"
+  },
+  "body": null,
+  "method": "GET"
+});
+
+
+fetch("https://client.warpcast.com/v2/following?fid=267375&limit=15", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "en-US,en;q=0.9",
+    "authorization": "Bearer MK-4NSiK24iDOAVEhp9P+JPy69JRiGuJK8SO+t72apQ6YhKXzpuxLtrK7nCwBpRULFwkSfomcOLHV8AJ+VAhfjEVw==",
+    "content-type": "application/json; charset=utf-8",
+    "fc-amplitude-device-id": "SQSDxvr9j7hgkoEjZ8OCbV",
+    "fc-amplitude-session-id": "1707051624536",
+    "sec-ch-ua": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"macOS\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site",
+    "Referer": "https://warpcast.com/",
+    "Referrer-Policy": "strict-origin-when-cross-origin"
+  },
+  "body": null,
+  "method": "GET"
+});
+
+
+fetch("https://client.warpcast.com/v2/follows", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "en-US,en;q=0.9",
+    "authorization": "Bearer MK-4NSiK24iDOAVEhp9P+JPy69JRiGuJK8SO+t72apQ6YhKXzpuxLtrK7nCwBpRULFwkSfomcOLHV8AJ+VAhfjEVw==",
+    "content-type": "application/json; charset=utf-8",
+    "fc-amplitude-device-id": "SQSDxvr9j7hgkoEjZ8OCbV",
+    "fc-amplitude-session-id": "1707051624536",
+    "sec-ch-ua": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"macOS\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site",
+    "Referer": "https://warpcast.com/",
+    "Referrer-Policy": "strict-origin-when-cross-origin"
+  },
+  "body": "{\"targetFid\":5650}",
+  "method": "PUT"
+});
