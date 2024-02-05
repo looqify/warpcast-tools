@@ -100,15 +100,24 @@ class Warpcast {
     const json = await res.json();
     return json;
   }
+
+  async getUserInfo() {
+    const res = await fetch(`https://client.warpcast.com/v2/onboarding-state`, {
+      headers: this.headers,
+    });
+
+    const { result } = await res.json();
+    return result;
+  }
 }
 
 const autoFollow = async () => {
   const token = prompt('Bearer    : ');
   const target = prompt('Target @  : ');
-  console.log();
   const client = new Warpcast(token);
-
   const id = await client.usernameToId(target);
+  console.log();
+
   let cursor = null;
   let hasNext = true;
   while (hasNext) {
@@ -139,11 +148,11 @@ const autoFollow = async () => {
 
 const unfollowNotFolback = async () => {
   const token = prompt('Bearer    : ');
-  const target = prompt('Target @  : ');
-  console.log();
   const client = new Warpcast(token);
+  const result = await client.getUserInfo();
+  const id = result.state.user.fid;
+  console.log();
 
-  const id = await client.usernameToId(target);
   let cursor = null;
   let hasNext = true;
   while (hasNext) {
@@ -174,10 +183,11 @@ const unfollowNotFolback = async () => {
 
 const exec = async () => {
   console.log();
-  console.log('[1] Follow by username');
-  console.log('[2] Unfollow not folback');
+  console.log('[1] Follow by username\n[2] Unfollow not folback');
+  console.log();
   const answer = prompt('>>> ');
   console.clear();
+
   if (parseInt(answer) === 1) {
     await autoFollow();
   } else {
